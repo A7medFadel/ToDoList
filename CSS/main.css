@@ -36,6 +36,7 @@ li {
 @media (max-width: 567px) {
     .container {
         min-height: 80vh;
+        max-height: 80vh;
     }
 }
 
