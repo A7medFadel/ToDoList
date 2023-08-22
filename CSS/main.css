@@ -22,7 +22,7 @@ li {
 
 .container {
     width: 80%;
-    height: 84vh;
+    height: 80vh;
     max-height: 84vh;
     background-color: #0f2763;
     border-radius: 20px;
@@ -35,21 +35,22 @@ li {
 
 @media (max-width: 567px) {
     .container {
-        min-height: 80vh;
-        max-height: 80vh;
+        height: 77vh;
+        max-height: 78vh;
+
     }
 }
 
 .ulForDivOfTasks {
     background-color: #0f2763;
     margin-top: 20px;
-    height: 60vh;
+    height: 55vh;
     overflow: overlay;
 }
 
 @media (max-width: 567px) {
     .ulForDivOfTasks {
-        height: 52vh;
+        height: 45vh;
     }
 }
 
@@ -174,6 +175,8 @@ form button {
         width: 100%;
     }
 } */
+
+/* #tasks>div {} */
 
 #tasks input {
     left: 10px;
