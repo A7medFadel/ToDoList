@@ -33,7 +33,7 @@ for (let i = 0; i < arrayOfTasks.length; i++) {
     }
 }
 
-tasksAdedNumber.innerHTML = 0;
+tasksAdedNumber.innerHTML = ulForDivOfTasks.childElementCount;
 
 // addTasksToLocalStorage(arrayOfTasks);
 // To submit a new task
