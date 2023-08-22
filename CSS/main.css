@@ -22,19 +22,45 @@ li {
 
 .container {
     width: 80%;
-    min-height: 84vh;
+    height: 84vh;
+    max-height: 84vh;
     background-color: #0f2763;
     border-radius: 20px;
     margin: 50px auto 80px;
     position: relative;
     padding-bottom: 60px;
     box-shadow: 3px 3px 5px #0f2763;
+    /* overflow: hidden; */
 }
 
 @media (max-width: 567px) {
     .container {
         min-height: 80vh;
     }
+}
+
+.ulForDivOfTasks {
+    background-color: #0f2763;
+    margin-top: 20px;
+    height: 60vh;
+    overflow: overlay;
+}
+
+@media (max-width: 567px) {
+    .ulForDivOfTasks {
+        height: 52vh;
+    }
+}
+
+.ulForDivOfTasks::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #0f2763;
+}
+
+.ulForDivOfTasks::-webkit-scrollbar-thumb {
+    background-color: #0164dd;
+    border-radius: 10px;
 }
 
 .header {
@@ -93,14 +119,11 @@ form input {
     border: none;
     padding: 0 0 0 40px;
     font-size: 18px;
-    /* color: #eee; */
 }
 
 @media (max-width: 567px) {
     form input {
         font-size: 16px;
-        /* text-align: center; */
-        /* padding: 0; */
     }
 }
 
@@ -133,28 +156,45 @@ form button {
 
 #tasks {
     width: calc(100% - 60px);
-    margin: 30px auto;
+    margin: 40px auto;
     height: 30px;
+    position: relative;
 }
 
 @media (max-width: 567px) {
     #tasks {
+        margin: 30px 0 30px 20px;
+    }
+}
+
+/* @media (max-width: 567px) {
+    #tasks {
         margin: 20px;
         width: 100%;
     }
-}
+} */
+
+/* #tasks>div {} */
 
 #tasks input {
     left: 10px;
     font-size: 77px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 25px;
     margin-left: 10px;
     cursor: pointer;
 }
 
+@media (max-width: 567px) {
+    #tasks input {
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
 #tasks h4 {
-    font-size: 26px;
+    font-size: 30px;
     color: white;
     display: inline-block;
     margin-left: 20px;
@@ -162,7 +202,7 @@ form button {
 
 @media (max-width: 567px) {
     #tasks h4 {
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
@@ -176,15 +216,16 @@ form button {
     background-color: #d3d312;
     border: none;
     border-radius: 5px;
-    position: absolute;
-    right: 38px;
     cursor: pointer;
     font-weight: bold;
+    position: absolute;
+    right: 0px;
+    font-size: 18px;
 }
 
 @media (max-width: 567px) {
     #tasks span {
-        right: 20px;
+        right: -15px;
         font-size: 15px;
     }
 }
@@ -252,7 +293,6 @@ form button {
     position: relative;
     top: -6px;
 }
-
 
 #sameTasksMsgDiv {
     background-color: white;
@@ -366,7 +406,7 @@ form button {
 .footer {
     width: 100%;
     background-color: #0f2763;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: 40px;
     display: flex;
