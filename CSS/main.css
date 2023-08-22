@@ -200,11 +200,14 @@ form button {
     color: white;
     display: inline-block;
     margin-left: 20px;
+    overflow: hidden;
+    max-width: 70%;
 }
 
 @media (max-width: 567px) {
     #tasks h4 {
-        font-size: 25px;
+        font-size: 20px;
+        max-width: 55%;
     }
 }
 
