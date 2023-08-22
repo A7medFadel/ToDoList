@@ -9,6 +9,8 @@ let
     , text = document.createElement('h4')
     , deleteButton = document.createElement('span')
     , noTasksMsg = document.getElementById('noTasksMsg')
+    , divForTask = document.createElement('div')
+    , divForDel = document.createElement('div')
     , divOfDivOfTasks = []
     , sameTasksMsgDiv = document.getElementById('sameTasksMsgDiv')
     , deleteAll = document.getElementById('deleteAll')
@@ -89,27 +91,32 @@ function addTastToArray(val) {
 
 // the main function to create tasks
 function createTask(textOfTask, tasksid) {
+    let
+        divOfTasks = document.createElement('li')
+        , checker = document.createElement('input')
+        , text = document.createElement('h4')
+        , deleteButton = document.createElement('span');
 
-    let divOfTasks = document.createElement('li');
+    ulForDivOfTasks.classList.add('ulForDivOfTasks');
+
     divOfTasks.setAttribute("id", "tasks");
     divOfTasks.setAttribute("data-id", tasksid);
 
-    let checker = document.createElement('input');
     checker.id = 'checker';
     checker, tasksCompletedNumber = document.getElementById('tasksCompletedNumber')
     checker.type = 'checkbox';
     checker.classList.add('theChecker');
 
-    let text = document.createElement('h4');
     text.innerHTML = textOfTask;
 
-    let deleteButton = document.createElement('span');
     deleteButton.setAttribute("id", "delete");
     deleteButton.innerHTML = 'delete';
 
     divOfTasks.appendChild(checker)
     divOfTasks.appendChild(text)
     divOfTasks.appendChild(deleteButton)
+    // divOfTasks.appendChild(divForTask)
+    // divOfTasks.appendChild(divForDel)
     ulForDivOfTasks.appendChild(divOfTasks)
 
     noTasksMsg.style.display = 'none';
