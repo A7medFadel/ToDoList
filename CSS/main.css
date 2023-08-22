@@ -31,6 +31,12 @@ li {
     box-shadow: 3px 3px 5px #0f2763;
 }
 
+@media (max-width: 567px) {
+    .container {
+        min-height: 80vh;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
