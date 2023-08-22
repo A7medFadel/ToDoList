@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To Do List</h1>
+        </div>
+        <form>
+            <label>
+                <input placeholder="Add a new task" id="input-task" required type="text">
+                <button id="sbm" type="submit" value="submit">Add task</button>
+            </label>
+        </form>
+        <div id="sameTasksMsgDiv">
+            <span id="sameTasksMsg"> You can't add an empty task! </span>
+        </div>
+        <div class="no-tasks-msg">
+            <span id="noTasksMsg">No Tasks</span>
+        </div>
+        <!-- <div id="divOfDivOfTasks"></div> -->
+        <!-- <div id="tasks">
+            <input value="on" type="checkbox" id="checker">
+            <h4 id="text">Learn English</h4>
+            <span id="delete">Delete</span>
+        </div> -->
+
+        <div class="tasks-div-aded">
+            <div id="all">
+                <div id="deleteAll">Delete All</div>
+                <div id="notasksToDelete">
+                    <span id="msgNotasksToDelete"> No tasks to delete! </span>
+                </div>
+            </div>
+            <div class="tasks-aded-container">
+                <span class="tasks-aded">Tasks</span>
+                <span id="tasksAdedNumber"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <span>Coding by </span>
+            <a href="https://t.me/A7HMED_FADEL">Abu Fadel</a>
+            <span> 2023</span>
+        </div>
+    </footer>
+    <script src="./JS/main.js"></script>
+
+</body>
+
+</html>
