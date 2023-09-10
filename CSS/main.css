@@ -44,13 +44,13 @@ li {
 .ulForDivOfTasks {
     background-color: #0f2763;
     margin-top: 20px;
-    height: 55vh;
+    max-height: 57%;
     overflow: overlay;
 }
 
 @media (max-width: 567px) {
     .ulForDivOfTasks {
-        height: 42vh;
+        max-height: 50%;
     }
 }
 
